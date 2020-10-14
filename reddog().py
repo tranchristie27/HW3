@@ -28,8 +28,7 @@ def reddog():
     card1 = a[card1] # turn into int
     card2 = a[card2] # turn into int
     if card1 > card2: 
-        card1 = swapGreater(card1,card2)[0]# swap cards so that card2 is always bigger than card1
-        card2 = swapGreater(card1,card2)[1]
+        (card1, card2) = swapGreater(card1,card2) # swap cards so that card2 is always bigger than card1
     if card2-card1 == 1:
         print('We push.')
         return bank
